@@ -3,7 +3,6 @@ import React from 'react';
 function Contact() {
   return (
     <div className="container" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-      {/* JUDUL UTAMA */}
       <h2 style={{ fontSize: '2.8rem', color: 'var(--primary)', marginBottom: '15px', textAlign: 'left' }}>
         Hubungi Saya
       </h2>
@@ -12,18 +11,16 @@ function Contact() {
         Terima kasih sudah berkunjung ke website portofolio saya! Jika kamu ingin berdiskusi, bertanya seputar perkuliahan, atau tertarik untuk berkolaborasi dalam project, silakan hubungi saya melalui salah satu platform interaktif di bawah ini:
       </p>
 
-      {/* 🌟 SATU KOTAK PERSEGI PANJANG BESAR MENYAMPING */}
       <div className="project-card" style={{ 
         padding: '20px', 
         maxWidth: '850px', 
         margin: '0 auto 45px auto',
         display: 'grid',
-        gridTemplateColumns: 'repeat(4, 1fr)', // Dibagi rata jadi 4 kolom menyamping
+        gridTemplateColumns: 'repeat(4, 1fr)',
         gap: '10px',
         alignItems: 'center'
       }}>
-        
-        {/* KOLOM 1: EMAIL (Langsung Buka APK Gmail/Mail) */}
+
         <a href="mailto:gintingtasya36@gmail.com" style={{ textDecoration: 'none', color: 'inherit' }}>
           <div style={{ textAlign: 'center', padding: '10px', borderRadius: '10px', cursor: 'pointer', transition: 'transform 0.2s' }} className="nav-item-link">
             <span style={{ fontSize: '1.8rem', display: 'block', marginBottom: '5px' }}>📩</span>
@@ -32,7 +29,6 @@ function Contact() {
           </div>
         </a>
 
-        {/* KOLOM 2: WHATSAPP (Langsung Buka APK WhatsApp Chat) */}
         <a href="https://api.whatsapp.com/send?phone=6281276599067" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
           <div style={{ textAlign: 'center', padding: '10px', borderRadius: '10px', cursor: 'pointer', transition: 'transform 0.2s' }} className="nav-item-link">
             <span style={{ fontSize: '1.8rem', display: 'block', marginBottom: '5px' }}>📱</span>
@@ -41,7 +37,6 @@ function Contact() {
           </div>
         </a>
 
-        {/* KOLOM 3: INSTAGRAM (Langsung Buka/Redirect ke APK Instagram) */}
         <a href="https://instagram.com/_u/asyaagtg" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
           <div style={{ textAlign: 'center', padding: '10px', borderRadius: '10px', cursor: 'pointer', transition: 'transform 0.2s' }} className="nav-item-link">
             <span style={{ fontSize: '1.8rem', display: 'block', marginBottom: '5px' }}>📸</span>
@@ -50,7 +45,6 @@ function Contact() {
           </div>
         </a>
 
-        {/* KOLOM 4: TIKTOK (Langsung Buka/Redirect ke APK TikTok) */}
         <a href="https://www.tiktok.com/@asyaagtg" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
           <div style={{ textAlign: 'center', padding: '10px', borderRadius: '10px', cursor: 'pointer', transition: 'transform 0.2s' }} className="nav-item-link">
             <span style={{ fontSize: '1.8rem', display: 'block', marginBottom: '5px' }}>🎵</span>
@@ -61,7 +55,6 @@ function Contact() {
 
       </div>
 
-      {/* SECTION PANTUN / QUOTE ESTETIK */}
       <div className="project-card" style={{ padding: '30px', textAlign: 'center', maxWidth: '850px', margin: '0 auto' }}>
         <p style={{ 
           fontSize: '1.25rem', 

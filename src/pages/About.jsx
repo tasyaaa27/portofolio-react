@@ -3,12 +3,10 @@ import React from 'react';
 function About() {
   return (
     <div className="container" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-      {/* Judul Utama Halaman */}
       <h2 style={{ fontSize: '2.8rem', color: 'var(--primary)', marginBottom: '25px', textAlign: 'left' }}>
         Tentang Saya
       </h2>
 
-      {/* 🌟 PARAGRAF PERKENALAN UTAMA (BARU) */}
       <div style={{ maxWidth: '800px', margin: '0 auto 35px auto', lineHeight: '1.8', fontSize: '1.1rem', opacity: 0.95 }}>
         <p>
           Saya adalah mahasiswi di <strong>Universitas Satya Terra Bhinneka</strong>, program studi <strong>Informatika</strong>. 
@@ -17,7 +15,6 @@ function About() {
         </p>
       </div>
 
-      {/* 🌸 KARTU BIODATA / TABEL (DI TENGAH & TIDAK KEPOTONG) */}
       <div className="card-biodata" style={{ 
         width: '100%', 
         maxWidth: '800px', 
@@ -63,13 +60,11 @@ function About() {
         </table>
       </div>
 
-      {/* 🌟 BARU: 🌸 BAGIAN SKILLS & TOOLS (KEAHLIAN TEKNIS) */}
       <div style={{ marginTop: '55px', display: 'block', clear: 'both', width: '100%', maxWidth: '800px', margin: '55px auto 0 auto' }}>
         <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.8rem', color: 'var(--accent)', marginBottom: '20px' }}>
           Keahlian & Tools
         </h3>
-        
-        {/* Kategori 1: Web Development */}
+
         <h4 style={{ fontSize: '1.1rem', marginBottom: '12px', color: 'var(--text-main)', opacity: 0.9 }}>
           💻 Web Development
         </h4>
@@ -80,7 +75,6 @@ function About() {
           <span className="project-badge" style={{ padding: '8px 18px' }}>⚛️ React.js (Vite)</span>
         </div>
 
-        {/* Kategori 2: Design & UI/UX */}
         <h4 style={{ fontSize: '1.1rem', marginBottom: '12px', color: 'var(--text-main)', opacity: 0.9 }}>
           🎀 Design & UI/UX
         </h4>
@@ -90,7 +84,6 @@ function About() {
           <span className="project-badge" style={{ padding: '8px 18px' }}>✨ Responsive Web Design</span>
         </div>
 
-        {/* Kategori 3: Other Tools */}
         <h4 style={{ fontSize: '1.1rem', marginBottom: '12px', color: 'var(--text-main)', opacity: 0.9 }}>
           🛠️ Tools & Lainnya
         </h4>
@@ -101,7 +94,6 @@ function About() {
         </div>
       </div>
 
-      {/* 🌸 BAGIAN HOBI (COQUETTE SCRAPBOOK LOOK) */}
       <div style={{ marginTop: '55px', display: 'block', clear: 'both', width: '100%', maxWidth: '800px', margin: '55px auto 0 auto' }}>
         <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.8rem', color: 'var(--accent)', marginBottom: '20px' }}>
           Hobi & Minat

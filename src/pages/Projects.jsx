@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-// Ambil foto dari folder assets kamu
 import gbrProject1 from '../assets/project1.png';
 import gbrProject2 from '../assets/project2.png';
 import gbrProject3 from '../assets/project3.png';
@@ -13,7 +12,7 @@ function Projects() {
       id: 1,
       title: "Tabel Praktikum & Multimedia",
       category: "Web Dasar",
-      image: gbrProject1, // Tetap tampil di kartu luar
+      image: gbrProject1,
       shortDesc: "Struktur HTML murni untuk data praktikum dan pemutar multimedia.",
       fullDesc: "Project praktikum awal yang berfokus pada penguasaan struktur HTML murni. Mengimplementasikan pembuatan tabel data akademik yang rapi, integrasi audio player, video otomatis (autoplay), serta penyusunan biodata terstruktur.",
       tech: ["HTML", "Multimedia", "CSS Dasar"]
@@ -22,7 +21,7 @@ function Projects() {
       id: 2,
       title: "Formulir Pendaftaran Online",
       category: "UI/UX",
-      image: gbrProject2, // Tetap tampil di kartu luar
+      image: gbrProject2,
       shortDesc: "Antarmuka formulir interaktif dengan validasi keamanan input.",
       fullDesc: "Pengembangan antarmuka formulir pendaftaran digital menggunakan CSS Grid dan Flexbox agar responsif. Dilengkapi dengan atribut validasi tipe data input, safety password, serta desain tombol interaktif saat diarahkan kursor.",
       tech: ["HTML", "CSS3 Forms", "UI Design"]
@@ -31,7 +30,7 @@ function Projects() {
       id: 3,
       title: "Landing Page Orangutan Haven",
       category: "React Project",
-      image: gbrProject3, // Tetap tampil di kartu luar
+      image: gbrProject3,
       shortDesc: "Website pusat konservasi Orangutan Sumatera yang responsif.",
       fullDesc: "Project website modern yang didedikasikan untuk pusat konservasi Orangutan Sumatera. Menggunakan React komponen agar modular, mencakup halaman edukasi habitat, sistem simulasi donasi, serta game interaktif sederhana ramah pengguna.",
       tech: ["React.js", "JavaScript", "CSS Modules", "Responsive"]
@@ -55,7 +54,6 @@ function Projects() {
         ))}
       </div>
 
-      {/* POP-UP MODAL FIX MELAYANG DI TENGAH */}
       {activeProject && (
         <div className="modal-overlay" onClick={() => setActiveProject(null)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>

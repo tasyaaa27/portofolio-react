@@ -56,7 +56,6 @@ function Education() {
             📍 Alamat: Jl. Sunggal Gg. Bakul, Sunggal, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20128
           </p>
 
-          {/* Garis batas halus internal */}
           <div style={{ borderTop: '1px dashed var(--border)', my: '10px', paddingTop: '12px' }}>
             <p style={{ marginBottom: '8px', lineHeight: '1.5' }}>
               • Aktif berkontribusi dalam organisasi internal <strong>UPM Komputer</strong>.
