@@ -243,3 +243,18 @@ footer {
   background: var(--primary);
   color: var(--bg-main) !important;
 }
+
+@media (max-width: 768px) {
+  header a, nav a, .navbar a, li a, button {
+    font-size: 11px !important;
+    padding: 4px 8px !important;
+    margin: 0 2px !important;
+  }
+
+  header, nav, .navbar, ul {
+    justify-content: center !important;
+    gap: 4px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
