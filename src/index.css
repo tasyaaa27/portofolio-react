@@ -1,3 +1,15 @@
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Biar tidak bisa digeser bocor ke kanan-kiri di HP */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Plus+Jakarta+Sans:wght@400;600&family=Dancing+Script:wght@700&display=swap');
 
 /* ===================================================
