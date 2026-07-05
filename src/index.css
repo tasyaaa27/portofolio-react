@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Plus+Jakarta+Sans:wght@400;600&family=Dancing+Script:wght@700&display=swap');
+
+/* ===================================================
+   PAKSA TOTAL BASE THEME (ANTI PUTIH BUJANG)
+   =================================================== */
+:root {
+  /* Default ke tema terang dulu */
+  --bg-main: #fff5f7;
+  --card-bg: #ffffff;
+  --text-main: #5e3038;
+  --text-sub: #8c5e66;
+  --primary: #ff8fab;
+  --accent: #fb6f92;
+  --border: rgba(255, 143, 171, 0.3);
+  --glow: rgba(255, 143, 171, 0.15);
+}
+
+/* Ketika class dark-theme aktif, variabel di root WAJIB berubah total */
+.dark-theme, [class*="dark-theme"] {
+  --bg-main: #0d0709 !important;           /* Hitam Onyx Pekat */
+  --card-bg: #1a0d11 !important;           /* Mawar Malam */
+  --text-main: #ffe5ec !important;         /* Teks Pink Putih Terang */
+  --text-sub: #ffb3c6 !important;          /* Teks Sekunder Pink */
+  --primary: #ff758f !important;           /* Pink Pita Neon */
+  --accent: #ff8fab !important;
+  --border: rgba(255, 117, 143, 0.4) !important;
+  --glow: rgba(255, 117, 143, 0.25) !important;
+}
+
+/* Amankan seluruh elemen html dan body */
+html, body, #root, .dark-theme {
+  background-color: var(--bg-main) !important; /* Paksa pakai variabel bg-main */
+  color: var(--text-main) !important;
+  min-height: 100vh !important;
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Sisa kode CSS ke bawah (Navbar, Cards, Modal, dll) biarkan sama seperti sebelumnya */
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: transparent !important; /* Mencegah tumpukan warna putih */
+}
+
+h1, h2, h3, .elegant-font {
+  font-family: 'Cormorant Garamond', serif !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.handwritten {
+  font-family: 'Dancing Script', cursive;
+  color: var(--primary);
+}
+
+/* ===================================================
+   NAVBAR & NAVIGATION STYLE
+   =================================================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: var(--card-bg);
+  border-bottom: 3px double var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-sub);
+  font-weight: 600;
+  margin-right: 25px;
+}
+
+.nav-links a.active, .nav-links a:hover {
+  color: var(--primary);
+}
+
+.btn-toggle, .btn-detail {
+  background: var(--primary);
+  color: #0d0709 !important;   /* Teks tombol gelap saat dark mode */
+  border: none;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.light-theme .btn-toggle, .light-theme .btn-detail {
+  color: #ffffff !important;   /* Teks tombol putih saat light mode */
+}
+
+.btn-toggle:hover, .btn-detail:hover {
+  background: var(--accent);
+  box-shadow: 0 5px 15px var(--glow);
+}
+
+footer {
+  text-align: center !important;
+  justify-content: center !important;
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+  margin-top: 50px;
+  width: 100%;
+  
+  /* 🌟 KUNCI UTAMA: Memaksa background footer mengikuti tema */
+  background-color: var(--bg-main) !important; 
+  border-top: 1px dashed var(--border);
+  font-size: 0.9rem;
+  color: var(--text-sub) !important;
+}
+
+/* ===================================================
+   CARDS / KOTAK LAYOUT (KUNCI WARNA GELAP)
+   =================================================== */
+.project-card, .card-biodata, .contact-footer-card, .modal-content, .contact-bubble {
+  background: var(--card-bg) !important;
+  border: 2px solid var(--border) !important;
+  border-radius: 24px;
+  padding: 25px;
+  box-shadow: 6px 6px 0px var(--glow);
+  color: var(--text-main) !important;
+}
+
+/* Memaksa elemen di dalam kartu agar cerah di dalam gelap */
+.project-card *, .card-biodata *, .contact-bubble *, .contact-footer-card *, .modal-content * {
+  color: var(--text-main) !important;
+}
+
+.project-card p, .card-biodata p, .contact-bubble span, .contact-bubble p {
+  color: var(--text-sub) !important;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Hero Section Layout Home */
+.hero-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.profil {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid var(--card-bg);
+  outline: 2px dashed var(--primary);
+}
+
+@media (max-width: 650px) {
+  .hero-row { flex-direction: column; text-align: center; gap: 20px; }
+}
+
+/* Badge Hobi & Tag */
+.project-badge, .tech-tag {
+  background: var(--bg-main) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text-sub) !important;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+/* ===================================================
+   MODAL POP-UP (UKURAN SEDANG & PAS DI TENGAH)
+   =================================================== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 7, 9, 0.8) !important; /* Latar belakang blur gelap */
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;     /* Mengunci pas di tengah vertikal */
+  justify-content: center;   /* Mengunci pas di tengah horizontal */
+  z-index: 9999;
+  padding: 20px;
+}
+
+.modal-content {
+  background: var(--card-bg) !important;
+  border: 2px solid var(--border) !important;
+  width: 100%;
+  max-width: 600px;         /* 🌟 DIKUNCI: Lebar maksimal pop-up cuma 600px (tidak melar semonster tadi) */
+  max-height: 85vh;         /* Biar tidak melebihi tinggi layar laptop */
+  overflow-y: auto;         /* Kalau teksnya panjang, otomatis bisa di-scroll di dalam kotak */
+  position: relative;
+  border-radius: 24px;
+  padding: 25px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+  animation: popIn 0.25s ease-out;
+}
+
+/* 🌟 STYLING KHUSUS GAMBAR DI DALAM POP-UP (BIAR TIDAK RAKSASA) */
+.modal-img-wrapper {
+  width: 100%;
+  max-height: 250px;        /* Batasi tinggi gambar cuplikan project */
+  overflow: hidden;
+  border-radius: 14px;
+  margin-bottom: 15px;
+  border: 1px solid var(--border);
+}
+
+.modal-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* Gambar terpotong rapi di dalam bingkai */
+}
+
+/* Tombol Silang Close di pojok kanan atas */
+.modal-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: rgba(255, 117, 143, 0.1);
+  border: none;
+  color: var(--primary) !important;
+  font-size: 1.4rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close-btn:hover {
+  background: var(--primary);
+  color: var(--bg-main) !important;
+}
