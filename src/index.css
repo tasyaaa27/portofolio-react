@@ -12,11 +12,7 @@ html, body {
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Plus+Jakarta+Sans:wght@400;600&family=Dancing+Script:wght@700&display=swap');
 
-/* ===================================================
-   PAKSA TOTAL BASE THEME (ANTI PUTIH BUJANG)
-   =================================================== */
 :root {
-  /* Default ke tema terang dulu */
   --bg-main: #fff5f7;
   --card-bg: #ffffff;
   --text-main: #5e3038;
@@ -27,21 +23,19 @@ html, body {
   --glow: rgba(255, 143, 171, 0.15);
 }
 
-/* Ketika class dark-theme aktif, variabel di root WAJIB berubah total */
 .dark-theme, [class*="dark-theme"] {
-  --bg-main: #0d0709 !important;           /* Hitam Onyx Pekat */
-  --card-bg: #1a0d11 !important;           /* Mawar Malam */
-  --text-main: #ffe5ec !important;         /* Teks Pink Putih Terang */
-  --text-sub: #ffb3c6 !important;          /* Teks Sekunder Pink */
-  --primary: #ff758f !important;           /* Pink Pita Neon */
+  --bg-main: #0d0709 !important;
+  --card-bg: #1a0d11 !important;
+  --text-main: #ffe5ec !important;
+  --text-sub: #ffb3c6 !important;
+  --primary: #ff758f !important;
   --accent: #ff8fab !important;
   --border: rgba(255, 117, 143, 0.4) !important;
   --glow: rgba(255, 117, 143, 0.25) !important;
 }
 
-/* Amankan seluruh elemen html dan body */
 html, body, #root, .dark-theme {
-  background-color: var(--bg-main) !important; /* Paksa pakai variabel bg-main */
+  background-color: var(--bg-main) !important;
   color: var(--text-main) !important;
   min-height: 100vh !important;
   width: 100% !important;
@@ -55,13 +49,11 @@ html, body, #root, .dark-theme {
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 
-/* Sisa kode CSS ke bawah (Navbar, Cards, Modal, dll) biarkan sama seperti sebelumnya */
-
 .container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 40px 20px;
-  background-color: transparent !important; /* Mencegah tumpukan warna putih */
+  background-color: transparent !important;
 }
 
 h1, h2, h3, .elegant-font {
@@ -75,9 +67,6 @@ h1, h2, h3, .elegant-font {
   color: var(--primary);
 }
 
-/* ===================================================
-   NAVBAR & NAVIGATION STYLE
-   =================================================== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -103,7 +92,7 @@ h1, h2, h3, .elegant-font {
 
 .btn-toggle, .btn-detail {
   background: var(--primary);
-  color: #0d0709 !important;   /* Teks tombol gelap saat dark mode */
+  color: #0d0709 !important;
   border: none;
   padding: 10px 22px;
   border-radius: 50px;
@@ -112,7 +101,7 @@ h1, h2, h3, .elegant-font {
 }
 
 .light-theme .btn-toggle, .light-theme .btn-detail {
-  color: #ffffff !important;   /* Teks tombol putih saat light mode */
+  color: #ffffff !important;
 }
 
 .btn-toggle:hover, .btn-detail:hover {
@@ -128,17 +117,13 @@ footer {
   padding: 25px 0;
   margin-top: 50px;
   width: 100%;
-  
-  /* 🌟 KUNCI UTAMA: Memaksa background footer mengikuti tema */
+
   background-color: var(--bg-main) !important; 
   border-top: 1px dashed var(--border);
   font-size: 0.9rem;
   color: var(--text-sub) !important;
 }
 
-/* ===================================================
-   CARDS / KOTAK LAYOUT (KUNCI WARNA GELAP)
-   =================================================== */
 .project-card, .card-biodata, .contact-footer-card, .modal-content, .contact-bubble {
   background: var(--card-bg) !important;
   border: 2px solid var(--border) !important;
@@ -148,7 +133,6 @@ footer {
   color: var(--text-main) !important;
 }
 
-/* Memaksa elemen di dalam kartu agar cerah di dalam gelap */
 .project-card *, .card-biodata *, .contact-bubble *, .contact-footer-card *, .modal-content * {
   color: var(--text-main) !important;
 }
@@ -161,7 +145,6 @@ footer {
   transform: translateY(-4px);
 }
 
-/* Hero Section Layout Home */
 .hero-row {
   display: flex;
   flex-direction: row;
@@ -185,7 +168,6 @@ footer {
   .hero-row { flex-direction: column; text-align: center; gap: 20px; }
 }
 
-/* Badge Hobi & Tag */
 .project-badge, .tech-tag {
   background: var(--bg-main) !important;
   border: 1px solid var(--border) !important;
@@ -196,20 +178,17 @@ footer {
   display: inline-block;
 }
 
-/* ===================================================
-   MODAL POP-UP (UKURAN SEDANG & PAS DI TENGAH)
-   =================================================== */
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(13, 7, 9, 0.8) !important; /* Latar belakang blur gelap */
+  background: rgba(13, 7, 9, 0.8) !important;
   backdrop-filter: blur(8px);
   display: flex;
-  align-items: center;     /* Mengunci pas di tengah vertikal */
-  justify-content: center;   /* Mengunci pas di tengah horizontal */
+  align-items: center;
+  justify-content: center;
   z-index: 9999;
   padding: 20px;
 }
@@ -218,9 +197,9 @@ footer {
   background: var(--card-bg) !important;
   border: 2px solid var(--border) !important;
   width: 100%;
-  max-width: 600px;         /* 🌟 DIKUNCI: Lebar maksimal pop-up cuma 600px (tidak melar semonster tadi) */
-  max-height: 85vh;         /* Biar tidak melebihi tinggi layar laptop */
-  overflow-y: auto;         /* Kalau teksnya panjang, otomatis bisa di-scroll di dalam kotak */
+  max-width: 600px;
+  max-height: 85vh;
+  overflow-y: auto;
   position: relative;
   border-radius: 24px;
   padding: 25px;
@@ -228,10 +207,9 @@ footer {
   animation: popIn 0.25s ease-out;
 }
 
-/* 🌟 STYLING KHUSUS GAMBAR DI DALAM POP-UP (BIAR TIDAK RAKSASA) */
 .modal-img-wrapper {
   width: 100%;
-  max-height: 250px;        /* Batasi tinggi gambar cuplikan project */
+  max-height: 250px;
   overflow: hidden;
   border-radius: 14px;
   margin-bottom: 15px;
@@ -241,10 +219,9 @@ footer {
 .modal-img-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover;        /* Gambar terpotong rapi di dalam bingkai */
+  object-fit: cover;
 }
 
-/* Tombol Silang Close di pojok kanan atas */
 .modal-close-btn {
   position: absolute;
   top: 15px;
