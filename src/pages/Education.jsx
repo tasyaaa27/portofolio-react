@@ -23,7 +23,7 @@ function Education() {
       }}>
 
         <div className="card-biodata" style={{ display: 'flex', flexDirection: 'column', gap: '8px', position: 'relative' }}>
-          <div style={{ position: 'absolute', top: '20px', right: '25px', fontSize: '3rem', opacity: 0.25, pointerEvents: 'none' }}>🎓</div>
+          <div style={{ position: 'absolute', top: '20px', right: '25px', fontSize: '3rem', opacity: 0.25, pointerEvents: 'none' }}></div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <span style={{ fontSize: '1.2rem' }}>🌸</span>
             <h3 style={{ fontSize: '1.4rem', color: '#ffebd2', margin: 0, fontWeight: '700' }}>
@@ -47,7 +47,7 @@ function Education() {
         </div>
 
         <div className="card-biodata" style={{ display: 'flex', flexDirection: 'column', gap: '8px', position: 'relative' }}>
-          <div style={{ position: 'absolute', top: '20px', right: '25px', fontSize: '3rem', opacity: 0.25, pointerEvents: 'none' }}>🏫</div>
+          <div style={{ position: 'absolute', top: '20px', right: '25px', fontSize: '3rem', opacity: 0.25, pointerEvents: 'none' }}></div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <span style={{ fontSize: '1.2rem' }}>🌸</span>
             <h3 style={{ fontSize: '1.4rem', color: '#ffebd2', margin: 0, fontWeight: '700' }}>
@@ -74,7 +74,7 @@ function Education() {
         </div>
 
         <div className="card-biodata" style={{ display: 'flex', flexDirection: 'column', gap: '8px', position: 'relative' }}>
-          <div style={{ position: 'absolute', top: '20px', right: '25px', fontSize: '3rem', opacity: 0.25, pointerEvents: 'none' }}> SMP </div>
+          <div style={{ position: 'absolute', top: '20px', right: '25px', fontSize: '3rem', opacity: 0.25, pointerEvents: 'none' }}></div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <span style={{ fontSize: '1.2rem' }}>🌸</span>
             <h3 style={{ fontSize: '1.4rem', color: '#ffebd2', margin: 0, fontWeight: '700' }}>
@@ -95,7 +95,7 @@ function Education() {
         </div>
 
         <div className="card-biodata" style={{ display: 'flex', flexDirection: 'column', gap: '8px', position: 'relative' }}>
-          <div style={{ position: 'absolute', top: '20px', right: '25px', fontSize: '3rem', opacity: 0.25, pointerEvents: 'none' }}> SD </div>
+          <div style={{ position: 'absolute', top: '20px', right: '25px', fontSize: '3rem', opacity: 0.25, pointerEvents: 'none' }}></div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <span style={{ fontSize: '1.2rem' }}>🌸</span>
             <h3 style={{ fontSize: '1.4rem', color: '#ffebd2', margin: 0, fontWeight: '700' }}>
@@ -116,7 +116,7 @@ function Education() {
         </div>
 
         <div className="card-biodata" style={{ display: 'flex', flexDirection: 'column', gap: '8px', position: 'relative' }}>
-          <div style={{ position: 'absolute', top: '20px', right: '25px', fontSize: '3rem', opacity: 0.25, pointerEvents: 'none' }}>🧸</div>
+          <div style={{ position: 'absolute', top: '20px', right: '25px', fontSize: '3rem', opacity: 0.25, pointerEvents: 'none' }}></div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <span style={{ fontSize: '1.2rem' }}>🌸</span>
             <h3 style={{ fontSize: '1.4rem', color: '#ffebd2', margin: 0, fontWeight: '700' }}>
