@@ -1,8 +1,8 @@
 :root {
-  --wine-dark: #1b0407;        /* Hitam Marun Pekat (Latar Luar) */
-  --crimson-deep: #420a12;     /* Merah Marun Gelap */
-  --crimson-glow: #8b1424;     /* Merah Crimson Terang (Pusat Cahaya) */
-  --champagne-gold: #F5E6CA;   /* Emas Pucat / Krem Mewah */
+  --wine-dark: #1b0407;
+  --crimson-deep: #420a12;
+  --crimson-glow: #8b1424;
+  --champagne-gold: #F5E6CA;
   --pure-white: #ffffff;
 }
 
